@@ -1,14 +1,167 @@
-body {
+/*
+Color scheme example:
+Background: #0B0C10
+Accent1 (greyish): #1F2883
+Accent2 (light grey): #C5C6C7
+Blue Theme1: #66FCF1
+Blue Theme2: #45A29E
+*/
+#root {
+  min-height: 90vh;
+}
+
+html, body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  min-height: 90vh;
+  /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    sans-serif; */
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Anonymous Pro', monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #0B0C10;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* img {
+  padding: 0;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
+} */
+
+.introName {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+
+.home {
+  /* text-align: center; */
+  min-height: 100vh;
+  min-width: 100vw;
+  color: #66FCF1;
+  background: url(./Tile1.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.experienceDescription{
+  color:#C5C6C7
+}
+
+.resumeClass {
+    /* text-align: center; */
+    min-height: 100vh;
+    min-width: 100vw;
+    background: url(./resumeBackground.jpg)    no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: lighten;
+    color: #66FCF1;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  /* position: -webkit-sticky;
+  position: sticky; */
+  /* top:   76px; */
+  /* background-color: #333; */
+  list-style: none;
+  overflow: hidden;
+}
+
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  /* border-color: hsla(122, 39%, 49%, .4);
+  border-style: solid;
+  border-width: 1px; */
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #151619;
+  color: hsla(122, 39%, 49%, 1.5 );;
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.titleName {
+  /* color: #4CAF50; */
+  color: #66FCF1;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #151619;
+  /* font-family: 'Open Sans', sans-serif; */
+  /* background-color: #98FB98; */
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+  font-weight: 100;
+}
+
+/* .titleName.is_stuck{
+  transition: font-size 500ms ease; font-size: 30%; transition: height 500ms ease;
+} */
+
+
+
+
+/* STUFF FOR TESTING */
+
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-linkedin {
+  /* background: #007bb5; */
+  background: #66666b;
+  color: white;
+}
+
+.fa-github-alt {
+  /* background: #007bb5; */
+  background: #66666b;
+  color: white;
+}
+
